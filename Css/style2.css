@@ -1,0 +1,401 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Establece un margen automático para el cuerpo del documento, lo que ayuda a centrar el contenido. */
+body {
+    margin: 0;
+      
+}
+
+/* globales */
+.contenedor{
+    max-width: 100%;
+    margin: 0 auto ;
+}
+
+.fw-300{
+    font-family: 'Comic Neue';
+    font-weight: 300;
+
+}
+
+.session{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.centrartexto{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+.boton{
+    display: inline-block;
+    color: pink;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.9rem;
+    padding: 0.5rem 4rem;
+    border: 0.3rem solid pink;
+    border-radius: 2rem;
+    width: 25rem;
+}
+.boton:hover {
+    background-color: pink; /* Cambia el fondo a rosado en el hover */
+    color: white; /* Cambia el color del texto a blanco en el hover */
+}
+.botonblanco{
+    display: inline-block;
+    background-color: pink;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2.0rem;
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    width: 20rem;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
+.botonblanco:hover {
+    background-color: rgb(255, 255, 255); /* Cambia el fondo a rosado en el hover */
+    color: rgb(250, 131, 171); /* Cambia el color del texto a blanco en el hover */   
+}
+
+h1{
+font-size: 3.8rem;
+}
+h2{
+font-size: 3.4rem;
+}
+h3{
+font-size: 3rem ;
+}
+h4{
+font-size: 2rem ;
+}
+
+
+/* Estiliza la sección de menú inicial. */
+.menuinicio {
+    background-color: pink;
+    max-width: 100%;
+    margin: 0;  
+    
+}
+/* Define el estilo del título. */
+.titulo {
+    font-size: 3rem;
+    padding-right: 50px; /* Agrega espacio en el lado derecho del título. */
+    font-family: 'Comic Neue';   
+}
+
+/* Establece estilos para el menú uno. */
+.menuuno {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;   
+}
+
+.containerinicio{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+/* Estiliza los enlaces de navegación en el menú uno. */
+.menunavegacion a {
+    color: white;
+    text-decoration: none;
+    margin: 1.8rem; /* Agrega margen alrededor de los enlaces. */
+    font-weight: 200; /* Define el peso de la fuente a negrita. */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas. */
+    font-size: 1.8rem; 
+}
+
+/* Estiliza la segunda cabecera. */
+.headerdos {
+    background-color: transparent;
+}
+
+/* Estiliza la sección de menú de categorías. */
+.menudecategoria {
+    margin: 3px; /* Agrega margen alrededor de la sección de menú de categorías. */
+}
+
+/* Estiliza la sección de menús. */
+.menudos {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+/* Estiliza los enlaces dentro de la sección de menú de categorías. */
+.menudecategoria a {
+    color: pink;
+    text-decoration: none;
+    margin-right: 60px; /* Agrega margen a la derecha de los enlaces. */
+    display: inline-block; /* Para que border-radius funcione correctamente. */
+    padding: 5px 10px; /* Agrega relleno a los enlaces. */
+    border: 2px solid pink; /* Agrega un borde con color pink. */
+    border-radius: 25px; /* Aplica bordes redondos a los enlaces. */
+    text-decoration: none; /* Quita la decoración de subrayado predeterminada. */
+    color: #ffffff; /* Color del texto. */
+    background-color: pink; /* Color de fondo. */
+}
+
+
+.menudecategoria a:last-of-type {
+    margin-right: 0;    /* Quita el margen al ultimo elemento (esto hace que el menu quede parejo. */
+}
+
+/* Cambia el color de los enlaces en menunavegacion al pasar el mouse sobre ellos. */
+.menunavegacion a:hover {
+    color: rgb(250, 131, 171);
+}
+
+/* Cambia el color de los enlaces en menudecategoria al pasar el mouse sobre ellos. */
+.menudecategoria a:hover {
+    color: rgb(250, 131, 171);
+}
+
+
+
+/* Estilos para el contenedor del contenido */
+.contenido-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Distribuye uniformemente el espacio entre los elementos hijos */
+    padding-left: 20px; /* Relleno a la izquierda del contenedor */
+    font-family: 'Comic Neue'; /* Tipo de fuente */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Estilos para los títulos dentro del contenedor del contenido */
+.contenido-container h3 {
+    max-width: 50rem; /* Ancho máximo del título */
+    line-height: 1.5; /* Altura de línea del título */
+    padding-top: 35rem; /* Relleno en la parte superior del título */
+}
+
+/* Estilos para la sección de referencias */
+.referencia {
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente el espacio entre los elementos hijos */
+}
+
+/* Estilos para las referencias individuales */
+.referenciaslentess {
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente el espacio entre los elementos hijos */
+    flex-basis: calc(33.3% - 2rem); /* Ancho basado en el 33.3%, restando 2rem para el margen */
+    text-align: center; /* Centra el texto en el elemento */
+   
+}
+
+/* Estilos para los títulos dentro de las referencias */
+.referenciaslentess h3 {
+    font-family: 'Comic Neue'; /* Tipo de fuente */
+}
+
+.referenciaslentess p{
+    color: pink;
+    display: inline-block; /* Para que border-radius funcione correctamente. */
+    padding: 5px 10px; /* Agrega relleno a los enlaces. */
+    border: 2px solid pink; /* Agrega un borde con color pink. */
+    border-radius: 25px; /* Aplica bordes redondos a los enlaces. */
+    color: #ffffff; /* Color del texto. */
+    background-color: pink; /* Color de fondo. */
+    font-size: 18px;   
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total. */
+    height: 7rem;
+
+.menununo{
+    margin-top: 20rem;
+}
+
+}
+.contenedormain{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenidomain h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-weight: 400;
+}
+
+.contenidomain h4{
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.referenciaslentes{
+    margin: 25rem 3rem;
+    flex-basis: calc(25% - 1rem);
+    text-align: center;    
+}
+.precio{
+    font-size: 1.8rem;   
+}
+
+.banner{
+    background-image: url(../img/KIT.svg);
+    height: 35rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.botonbanner {
+    position: relative; /* Cambia la posición a relativa */
+    left: 16rem; /* Mueve el enlace 16 píxeles a la derecha */
+    bottom: 35px; /* Mueve el enlace 35 píxeles hacia arriba */
+}
+
+/* Estilos para los símbolos con contorno en el banner */
+.material-symbols-outlined {
+    text-decoration: none;
+    display: inline-block;
+    color: pink;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-left: 1.8rem; /* Margen a la izquierda del símbolo */
+    position: relative;
+    left: 2rem; /* Mueve el símbolo 2 píxeles a la derecha */
+}
+
+/* Cambia el color de los símbolos al pasar el mouse sobre ellos */
+.material-symbols-outlined:hover {
+    color: rgb(250, 131, 171);
+}
+
+/* Estilos para la sección final con flexbox */
+.sectiondosfinal {
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente el espacio entre los elementos hijos */
+}
+
+/* Estilos para la columna izquierda en la sección final */
+.sectiondosfinal .sectiondos {
+    flex-basis: 40%; /* Establece el ancho de la columna izquierda al 40% del contenedor principal */
+}
+
+/* Estilos para la columna derecha (testimoniales) en la sección final */
+.sectiondosfinal .testimoniales {
+    flex-basis: calc(60% - 2rem); /* Establece el ancho de la columna derecha al 60% del contenedor principal, restando 2rem para el margen */
+}
+
+/* Estilos para el diseño de los artículos finales */
+.articlefinal {
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente el espacio entre los elementos hijos */
+    margin-bottom: 3rem; /* Margen en la parte inferior de los artículos */
+}
+
+/* Estilos para la sección de artículos */
+.sectionacticle {
+    margin-top: 6rem; /* Margen en la parte superior de la sección de artículos */
+}
+
+/* Estilos para las imágenes y el contenido del artículo */
+.imgarticle1 {
+    text-align: center; /* Centra el contenido del artículo */
+    margin: 1.5rem; /* Margen alrededor de la imagen del artículo */
+    max-width: 35rem; /* Ancho máximo de la imagen del artículo */
+}
+
+/* Estilos para el título del artículo en la imagen */
+.imgarticle1 h3 {
+    margin-top: 1.5rem; /* Margen en la parte superior del título del artículo */
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 150; /* Peso de la fuente del título del artículo */
+    text-transform: capitalize; /* Transforma el texto a mayúsculas */
+}
+.imgarticle1 p {
+    display: flex; /* Usa un modelo de caja flexible para ajustar el contenido. */
+    margin-top: 1.5rem;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    color: pink;
+    display: inline-block; /* Esto parece redundante y puede eliminarse. */
+    padding: 5px 10px; /* Añade relleno alrededor del contenido del párrafo. */
+    border: 2px solid pink; /* Añade un borde sólido de 2px con color pink. */
+    border-radius: 25px; /* Aplica bordes redondos a los extremos del borde. */
+    color: #ffffff; /* Color del texto en blanco. */
+    background-color: pink; /* Fondo del párrafo en color pink. */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento. */
+    width: 35rem; /* Ancho fijo del contenedor, ajusta según sea necesario. */
+}
+
+/* Estilos para .gif-lentes */
+.gif-lentes {
+    display: block; /* Muestra el elemento como un bloque. */
+    user-select: contain; /* No permite la selección de texto. */
+    -webkit-user-select: none; /* Desactiva la selección de texto para navegadores webkit. */
+    margin: auto; /* Centra el elemento horizontalmente. */
+}
+
+.gif-lentes img {
+    width: 75%; /* Ancho del 75% del contenedor principal. */
+    height: 75%; /* Altura del 75% del contenedor principal. */
+    min-width: inherit; /* Hereda el ancho mínimo del contenedor principal. */
+    margin-left: 5rem; /* Margen izquierdo de 5rem. Puedes ajustar según sea necesario. */
+    margin-right: 5rem; /* Margen derecho de 5rem. Puedes ajustar según sea necesario. */
+    border-radius: 2rem; /* Bordes redondos con un radio de 2rem. */
+}
+
+/* Estilos para el pie de página con la clase .footerunoclass */
+.footerunoclass {
+    background-color: pink; /* Fondo del pie de página en color pink. */
+    padding: 1rem 2rem; /* Añade relleno alrededor del contenido del pie de página. */
+}
+
+/* Estilos para el contenedor principal del pie de página con la clase .footeruno */
+.footeruno {
+    display: flex; /* Utiliza un modelo de caja flexible para el contenido del pie de página. */
+    justify-content: space-around; /* Distribuye uniformemente el espacio entre los elementos hijos. */
+    align-items: center; /* Centra verticalmente los elementos hijos. */
+}
+
+/* Estilos para las imágenes dentro del pie de página */
+.footeruno img {
+    height: 4rem; /* Altura de las imágenes en el pie de página. Ajusta según sea necesario. */
+}
+
+/* Estilos para el texto de derechos de autor */
+.derechos {
+    margin: 2rem; /* Margen alrededor del texto de derechos de autor. */
+    font-size: 1.8rem; /* Tamaño de fuente para el texto de derechos de autor. */
+}
+
+.inicio{
+    position: fixed;
+    width: 100%;
+    
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
